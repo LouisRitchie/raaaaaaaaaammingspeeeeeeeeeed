@@ -1,0 +1,59 @@
+html{
+    margin:0;
+    height:100%;
+}
+
+body {
+    background:black;
+    position:relative;
+    height:100%;
+}
+.container {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: 700px;
+}
+a {
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.episode {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'News Gothic', sans-serif;
+    margin: 20px;
+}
+#example {
+    pointer-events: none;
+    position: relative;
+    font-size: 26px;
+    bottom: 0px;
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    overflow: hidden;
+    margin: 0px auto;
+    -webkit-transform: perspective(200px) rotateX(45deg);
+    transform: perspective(200px) rotateX(45deg);
+    font-family:Univers, sans-serif;
+    color: gold;
+}
+#intro{
+    pointer-events: none;
+    position: absolute;
+    top: 500px;
+    -webkit-transition: 70s all;
+    transition: 70s all;
+}
+#intro:target{
+    top: -800px;
+}
